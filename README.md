@@ -45,6 +45,7 @@ This list is intentionally selective. It favors resources that help developers u
 - [GitHub Copilot](https://github.com/features/copilot) - AI pair programmer integrated into popular IDEs and GitHub workflows.
 - [Cursor](https://cursor.com/) - AI-native code editor for codebase chat, multi-file edits, and refactoring.
 - [Windsurf](https://windsurf.com/) - AI-first development environment with code editing and agentic assistance.
+- [Google Antigravity](https://antigravity.google/) - Agent-first IDE from Google where autonomous agents plan, execute, and verify software tasks with artifacts and browser verification.
 - [Continue](https://www.continue.dev/) - Open-source IDE assistant that can connect different models and custom context sources.
 - [Amazon Q Developer](https://aws.amazon.com/q/developer/build/) - AWS-focused coding assistant for IDEs, terminals, and cloud development tasks.
 - [Tabnine](https://www.tabnine.com/) - Code completion assistant with support for team and enterprise workflows.
