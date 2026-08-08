@@ -64,6 +64,7 @@ This list is intentionally selective. It favors resources that help developers u
 - [Wren AI](https://www.getwren.ai/oss) - Open-source generative BI and text-to-SQL agent with a semantic layer.
 - [Gitingest](https://gitingest.com/) - Converts repositories into LLM-friendly text digests.
 - [Repomix](https://repomix.com/) - Packs source code into structured context files for AI tools.
+- [code-review-graph](https://github.com/tirth8205/code-review-graph) - Local-first code intelligence graph for MCP and CLI that reduces context needed by AI coding tools.
 - [screenshot-to-code](https://github.com/abi/screenshot-to-code) - Converts UI screenshots into frontend code.
 - [v0](https://v0.dev) - Prompt-based UI generation for React and Next.js projects.
 - [Bolt.new](https://bolt.new/) - AI web development agent for building and deploying full-stack apps in the browser.
@@ -80,6 +81,10 @@ This list is intentionally selective. It favors resources that help developers u
 - [SWE-agent](https://github.com/SWE-agent/SWE-agent) - Research agent from the SWE-bench team that autonomously fixes GitHub issues.
 - [OpenCode](https://opencode.ai/) - Open-source terminal coding agent with provider flexibility.
 - [OpenHands](https://github.com/OpenHands/OpenHands) - Autonomous software engineering agent with shell, browser, and editor workflows.
+- [Prime Agent](https://github.com/PrimeIntellect-ai/prime-agent) - Self-improving RLM agent for coding workflows and long-running autonomous tasks.
+- [DeerFlow](https://github.com/bytedance/deer-flow) - Long-horizon SuperAgent harness with sandboxes, memory, tools, skills, and subagents.
+- [DeepSeek-Reasonix](https://github.com/esengine/DeepSeek-Reasonix) - DeepSeek-native terminal coding agent engineered around prefix-cache stability.
+- [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) - Early autonomous agent project that grew into a platform for building and running AI agents.
 - [Cline](https://github.com/cline/cline) - VS Code agent extension with tool use, file editing, and multi-provider support.
 - [RooCode](https://github.com/RooCodeInc/Roo-Code) - Autonomous VS Code coding agent for planning and implementation tasks.
 - [Pi](https://pi.dev/) - Customizable terminal coding agent with an extension-friendly workflow.
@@ -108,14 +113,24 @@ This list is intentionally selective. It favors resources that help developers u
 - [VoltAgent](https://github.com/voltagent/voltagent) - TypeScript framework for agents with tools, memory, and observability hooks.
 - [Portia AI](https://www.portialabs.ai/) - Agent framework designed around visible plans, progress updates, and human interruption.
 - [Agent Skills](https://agentskills.io) - Open format and reference SDK for reusable agent capabilities.
+- [agent-skills](https://github.com/addyosmani/agent-skills) - Production-grade engineering skills for AI coding agents, curated by Addy Osmani.
+- [skills](https://github.com/mattpocock/skills) - Matt Pocock's collection of practical engineering skills for coding agents.
+- [Superpowers](https://github.com/obra/superpowers) - Agentic skills framework and software development methodology.
+- [Google Skills](https://github.com/google/skills) - Official Agent Skills for Google products and technologies.
+- [Compound Engineering Plugin](https://github.com/EveryInc/compound-engineering-plugin) - Compound engineering workflows packaged for Claude Code, Codex, Cursor, and other agents.
 - [Model Context Protocol](https://modelcontextprotocol.io/) - Open protocol for connecting AI systems to tools, data, and external capabilities.
 - [ToolHive](https://github.com/stacklok/toolhive) - Tool for finding and deploying MCP servers.
 - [Steel Browser](https://github.com/steel-dev/steel-browser) - Browser automation infrastructure for AI agents, including sessions, screenshots, and proxies.
 - [Notte](https://github.com/nottelabs/notte) - Framework for browser-using AI agents.
 - [Browser Use](https://github.com/browser-use/browser-use) - Library that lets AI agents control a real browser to complete web tasks.
 - [E2B](https://e2b.dev/) - Sandboxed cloud environments for safely running AI-generated code.
+- [Cloudflare Computer](https://github.com/cloudflare/computer) - Sandboxed computer environments that give agents a full machine to work in.
 - [mem0](https://github.com/mem0ai/mem0) - Memory layer that lets agents retain user context across sessions.
 - [Letta](https://www.letta.com/) - Platform for stateful agents with long-term memory, based on the MemGPT research.
+- [TencentDB Agent Memory](https://github.com/TencentCloud/TencentDB-Agent-Memory) - Team-level memory hub that turns conversations, docs, and code into reusable memory assets shared across agents.
+- [Swarm Forge](https://github.com/unclebob/swarm-forge) - Simple tool from Robert C. Martin for coordinating several AI agents.
+- [LiveKit Agents](https://github.com/livekit/agents) - Framework for building realtime voice and video AI agents.
+- [Agent Reach](https://github.com/Panniantong/Agent-Reach) - CLI that gives agents read and search access to Twitter, Reddit, YouTube, GitHub, and more without API fees.
 
 ## LLM App Frameworks
 
@@ -130,6 +145,7 @@ This list is intentionally selective. It favors resources that help developers u
 - [Flowise](https://flowiseai.com/) - Drag-and-drop builder for LLM flows and agents.
 - [Langflow](https://www.langflow.org/) - Visual builder for RAG and multi-agent applications.
 - [Docling](https://github.com/docling-project/docling) - Document conversion and ingestion toolkit for AI pipelines.
+- [pdf-inspector](https://github.com/firecrawl/pdf-inspector) - Fast Rust library for PDF inspection, classification, and text extraction with scanned-vs-text detection.
 - [Firecrawl](https://www.firecrawl.dev/) - API that crawls websites and converts them into LLM-ready markdown or structured data.
 - [Crawl4AI](https://github.com/unclecode/crawl4ai) - Open-source web crawler designed for LLM data pipelines.
 - [LLM App](https://github.com/pathwaycom/llm-app) - Framework for real-time LLM-enabled data pipelines.
@@ -148,6 +164,7 @@ This list is intentionally selective. It favors resources that help developers u
 - [Exa](https://exa.ai/) - Search API designed for language-model workflows.
 - [Phind](https://phind.com/) - Developer-focused AI search and answer engine.
 - [You.com](https://you.com/) - AI search engine with personalized and privacy-oriented features.
+- [Semantica](https://github.com/semantica-agi/semantica) - Graph-native infrastructure for context and accountable AI systems.
 - [privateGPT](https://github.com/zylon-ai/private-gpt) - Local document Q&A for private files.
 - [Quivr](https://github.com/QuivrHQ/quivr) - Personal knowledge base that lets users chat with stored files and notes.
 - [LibreChat](https://librechat.ai/) - Open-source multi-provider chat UI for assistant-style workflows.
@@ -187,6 +204,8 @@ This list is intentionally selective. It favors resources that help developers u
 - [MLX](https://github.com/ml-explore/mlx) - Apple's array framework for efficient machine learning on Apple silicon.
 - [bitnet.cpp](https://github.com/microsoft/BitNet) - Microsoft inference framework for 1-bit LLMs.
 - [whisper.cpp](https://github.com/ggml-org/whisper.cpp) - C/C++ implementation of Whisper for local speech recognition.
+- [ds4](https://github.com/antirez/ds4) - DeepSeek 4 Flash and PRO local inference engine for Metal, CUDA, and ROCm by antirez.
+- [AirLLM](https://github.com/lyogavin/airllm) - Runs 70B model inference on a single 4GB GPU via layered loading.
 - [Harbor](https://github.com/av/harbor) - Containerized stack for running local model backends, UIs, and supporting services.
 - [RunThisLLM](https://runthisllm.com) - Hardware-oriented guide for choosing models that can run locally.
 - [OpenRouter](https://openrouter.ai/) - Unified API for accessing many hosted models through one interface.
@@ -302,6 +321,7 @@ This list is intentionally selective. It favors resources that help developers u
 - [Kling AI](https://kling.ai/) - Image and video generation tools.
 - [Google Flow](https://labs.google/fx/tools/flow) - Google AI filmmaking workspace powered by Veo.
 - [HyperFrames](https://hyperframes.heygen.com/) - Framework for programmatically rendering video with HTML, CSS, JavaScript, and agents.
+- [video-use](https://github.com/browser-use/video-use) - Library for editing videos with coding agents.
 
 ### Audio
 
@@ -314,8 +334,14 @@ This list is intentionally selective. It favors resources that help developers u
 - [Bark](https://github.com/suno-ai/bark) - Open-source transformer-based text-to-audio model.
 - [TorToiSe](https://github.com/neonbjb/tortoise-tts) - Open-source text-to-speech model with an emphasis on voice quality.
 - [AudioCraft](https://audiocraft.metademolab.com/) - Meta's generative audio toolkit for music and sound generation.
+- [Voicebox](https://github.com/jamiepine/voicebox) - Open-source AI voice studio for cloning, dictation, and creation.
+- [speech-to-speech](https://github.com/huggingface/speech-to-speech) - Hugging Face toolkit for building local voice agents with open-source models.
 - [Suno](https://suno.com/) - Text-to-music generation platform.
 - [Udio](https://www.udio.com/) - Music generation platform for creating and sharing songs.
+
+### 3D
+
+- [TRELLIS.2](https://github.com/microsoft/TRELLIS.2) - Microsoft's native and compact structured latents for 3D generation.
 
 ## Datasets and Benchmarks
 
@@ -370,6 +396,8 @@ This list is intentionally selective. It favors resources that help developers u
 - [Google Generative AI Learning Path](https://www.cloudskillsboost.google/paths/118) - Introductory path for generative AI concepts and Google tooling.
 - [Google DeepMind Introduction to Reinforcement Learning](https://www.youtube.com/playlist?list=PLqYmG7hTraZDM-OYHWgPebj2MfCFzFObQ) - Video course on RL fundamentals.
 - [Karpathy: Neural Networks Zero to Hero](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ) - Bottom-up neural network and language-model implementation series.
+- [Generative AI for Beginners](https://github.com/microsoft/generative-ai-for-beginners) - Microsoft's 21-lesson course on building with generative AI.
+- [AI for Beginners](https://github.com/microsoft/AI-For-Beginners) - Microsoft's 12-week, 24-lesson introductory AI curriculum.
 - [AI for Everyone](https://www.deeplearning.ai/ai-for-everyone/) - Non-technical overview of AI strategy and capabilities.
 
 ## Papers and Research Context
