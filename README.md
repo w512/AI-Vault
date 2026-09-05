@@ -426,6 +426,7 @@ This list is intentionally selective. It favors resources that help developers u
 
 ## Communities, News, and Related Lists
 
+- [AI Weekly](https://aiweekly.co/) - Tracks what influential AI experts and organizations are reading and sharing, with coverage of models, agents, funding, policy, and research.
 - [AI Engineer Newsletter](https://newsletter.owainlewis.com) - Newsletter focused on AI engineering and practical LLM development.
 - [Latent Space](https://www.latent.space/) - Podcast and newsletter for AI engineers.
 - [Simon Willison's Weblog](https://simonwillison.net/) - Prolific blog tracking practical LLM tools and developments.
