@@ -1,6 +1,4 @@
-# AI Vault
-
-[![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re)
+# AI Vault [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re)
 
 My curated vault of resources for learning, building, shipping, and using AI in software development. The focus is practical AI engineering: LLM applications, agentic coding, RAG, local models, evaluation, observability, ML foundations, and durable learning material.
 
@@ -11,22 +9,22 @@ This list is intentionally selective. It favors resources that help developers u
 ## Contents
 
 - [Start Here](#start-here)
-- [AI Coding Assistants](#ai-coding-assistants)
-- [Software Engineering Agents](#software-engineering-agents)
-- [Agent Frameworks](#agent-frameworks)
-- [LLM App Frameworks](#llm-app-frameworks)
-- [RAG, Search, and Knowledge](#rag-search-and-knowledge)
-- [Vector Databases](#vector-databases)
-- [Local LLMs and Inference](#local-llms-and-inference)
+- [AI Coding Tools](#ai-coding-tools)
+- [Agent Frameworks and Infrastructure](#agent-frameworks-and-infrastructure)
+- [LLM App Development](#llm-app-development)
+- [RAG and Data Ingestion](#rag-and-data-ingestion)
+- [AI Search and Research Assistants](#ai-search-and-research-assistants)
+- [Inference and Serving](#inference-and-serving)
 - [Model Providers and Families](#model-providers-and-families)
-- [Evals, Observability, and LLMOps](#evals-observability-and-llmops)
+- [Fine-Tuning and Training](#fine-tuning-and-training)
+- [Evals, Observability, and Security](#evals-observability-and-security)
+- [Benchmarks and Leaderboards](#benchmarks-and-leaderboards)
 - [Prompting and Playgrounds](#prompting-and-playgrounds)
 - [Machine Learning and Deep Learning](#machine-learning-and-deep-learning)
 - [Multimodal AI](#multimodal-ai)
-- [Datasets and Benchmarks](#datasets-and-benchmarks)
 - [Courses and Books](#courses-and-books)
 - [Papers and Research Context](#papers-and-research-context)
-- [Communities, News, and Related Lists](#communities-news-and-related-lists)
+- [Newsletters, Blogs, and Communities](#newsletters-blogs-and-communities)
 
 ## Start Here
 
@@ -35,42 +33,21 @@ This list is intentionally selective. It favors resources that help developers u
 - [Full Stack Deep Learning](https://fullstackdeeplearning.com/) - Production-oriented course material for training, deploying, and maintaining ML systems.
 - [Fast.ai Practical Deep Learning](https://course.fast.ai/) - Code-first deep learning course aimed at builders rather than pure theorists.
 - [Google Machine Learning Crash Course](https://developers.google.com/machine-learning/crash-course/ml-intro) - A compact introduction to supervised ML concepts and applied modeling.
-- [Learn Prompting](https://learnprompting.org/) - Open educational material for prompting, structured outputs, and AI safety basics.
-- [Prompt Engineering Guide](https://github.com/dair-ai/Prompt-Engineering-Guide) - Community-maintained notes and examples for prompt design.
 - [Transformer Explainer](https://poloclub.github.io/transformer-explainer/) - Interactive browser visualization of how transformer language models process text.
 - [AnimatedLLM](https://animatedllm.github.io/) - Visual explanations of core LLM mechanics.
 - [R2D3: A Visual Introduction to Machine Learning](http://www.r2d3.us) - Friendly visual explanations for important ML ideas.
 
-## AI Coding Assistants
+## AI Coding Tools
 
-- [GitHub Copilot](https://github.com/features/copilot) - AI pair programmer integrated into popular IDEs and GitHub workflows.
+### Agentic IDEs and Editors
+
 - [Cursor](https://cursor.com/) - AI-native code editor for codebase chat, multi-file edits, and refactoring.
 - [Windsurf](https://windsurf.com/) - AI-first development environment with code editing and agentic assistance.
 - [Zed](https://zed.dev/) - High-performance code editor with built-in AI editing and agentic workflows.
 - [Kiro](https://kiro.dev/) - Agentic IDE from AWS built around spec-driven development.
 - [Google Antigravity](https://antigravity.google/) - Agent-first IDE from Google where autonomous agents plan, execute, and verify software tasks with artifacts and browser verification.
-- [Continue](https://www.continue.dev/) - Open-source IDE assistant that can connect different models and custom context sources.
-- [Amazon Q Developer](https://aws.amazon.com/q/developer/build/) - AWS-focused coding assistant for IDEs, terminals, and cloud development tasks.
-- [Tabnine](https://www.tabnine.com/) - Code completion assistant with support for team and enterprise workflows.
-- [Replit Ghostwriter](https://blog.replit.com/ai) - Replit's coding assistant for generation, explanation, and iteration inside the browser IDE.
-- [Jupyter AI](https://github.com/jupyterlab/jupyter-ai) - AI assistant for JupyterLab and notebooks with support for many local and hosted models.
-- [Qodo](https://www.qodo.ai/) - AI coding and review workflows focused on tests, pull requests, and code quality.
-- [CodeRabbit](https://coderabbit.ai/) - AI pull request review assistant for summarizing changes and surfacing issues.
-- [PR-Agent](https://github.com/The-PR-Agent/pr-agent) - Open-source automation for PR review, descriptions, suggestions, and feedback.
-- [Mintlify](https://mintlify.com/) - AI-assisted documentation generation for codebases and developer products.
-- [Stenography](https://stenography.dev/) - Tool for generating code explanations and documentation.
-- [AI2sql](https://www.ai2sql.io/) - Natural-language interface for generating SQL queries.
-- [Vanna](https://vanna.ai/) - Open-source RAG approach for text-to-SQL and database question answering.
-- [Wren AI](https://www.getwren.ai/oss) - Open-source generative BI and text-to-SQL agent with a semantic layer.
-- [Gitingest](https://gitingest.com/) - Converts repositories into LLM-friendly text digests.
-- [Repomix](https://repomix.com/) - Packs source code into structured context files for AI tools.
-- [code-review-graph](https://github.com/tirth8205/code-review-graph) - Local-first code intelligence graph for MCP and CLI that reduces context needed by AI coding tools.
-- [screenshot-to-code](https://github.com/abi/screenshot-to-code) - Converts UI screenshots into frontend code.
-- [v0](https://v0.dev) - Prompt-based UI generation for React and Next.js projects.
-- [Bolt.new](https://bolt.new/) - AI web development agent for building and deploying full-stack apps in the browser.
-- [Lovable](https://lovable.dev) - Conversational app generation for quickly turning product ideas into deployable code.
 
-## Software Engineering Agents
+### Terminal Coding Agents
 
 - [Codex CLI](https://github.com/openai/codex) - Local terminal coding agent for repository-aware development tasks.
 - [Claude Code](https://code.claude.com/) - Terminal-based coding agent for navigating and editing larger codebases.
@@ -78,24 +55,61 @@ This list is intentionally selective. It favors resources that help developers u
 - [Aider](https://aider.chat/) - Git-aware pair programmer that edits files and keeps changes easy to review.
 - [Amp](https://ampcode.com/) - Agentic coding tool from Sourcegraph for editor and terminal workflows.
 - [Goose](https://github.com/block/goose) - Open-source local coding agent from Block that works with any model.
-- [SWE-agent](https://github.com/SWE-agent/SWE-agent) - Research agent from the SWE-bench team that autonomously fixes GitHub issues.
 - [OpenCode](https://opencode.ai/) - Open-source terminal coding agent with provider flexibility.
-- [OpenHands](https://github.com/OpenHands/OpenHands) - Autonomous software engineering agent with shell, browser, and editor workflows.
-- [Prime Agent](https://github.com/PrimeIntellect-ai/prime-agent) - Self-improving RLM agent for coding workflows and long-running autonomous tasks.
-- [DeerFlow](https://github.com/bytedance/deer-flow) - Long-horizon SuperAgent harness with sandboxes, memory, tools, skills, and subagents.
-- [DeepSeek-Reasonix](https://github.com/esengine/DeepSeek-Reasonix) - DeepSeek-native terminal coding agent engineered around prefix-cache stability.
-- [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) - Early autonomous agent project that grew into a platform for building and running AI agents.
-- [Cline](https://github.com/cline/cline) - VS Code agent extension with tool use, file editing, and multi-provider support.
-- [RooCode](https://github.com/RooCodeInc/Roo-Code) - Autonomous VS Code coding agent for planning and implementation tasks.
 - [Pi](https://pi.dev/) - Customizable terminal coding agent with an extension-friendly workflow.
 - [Plandex](https://github.com/plandex-ai/plandex) - Terminal-based AI coding workflow for larger implementation plans.
-- [GPT Engineer](https://github.com/AntonOsika/gpt-engineer) - Generates software projects from a high-level specification and clarifying questions.
-- [GPT Pilot](https://github.com/Pythagora-io/gpt-pilot) - App-building agent designed to keep a developer in the loop.
-- [Devin](https://devin.ai/) - Commercial autonomous software engineering agent.
+- [DeepSeek-Reasonix](https://github.com/esengine/DeepSeek-Reasonix) - DeepSeek-native terminal coding agent engineered around prefix-cache stability.
 - [Open Interpreter](https://github.com/openinterpreter/open-interpreter) - Local terminal interface for executing code and automating computer tasks with LLMs.
-- [TurboPilot](https://github.com/ravenscroftj/turbopilot) - Self-hosted Copilot-like experiment built around local inference.
 
-## Agent Frameworks
+### IDE Extensions and Assistants
+
+- [GitHub Copilot](https://github.com/features/copilot) - AI pair programmer integrated into popular IDEs and GitHub workflows.
+- [Continue](https://www.continue.dev/) - Open-source IDE assistant that can connect different models and custom context sources.
+- [Cline](https://github.com/cline/cline) - VS Code agent extension with tool use, file editing, and multi-provider support.
+- [RooCode](https://github.com/RooCodeInc/Roo-Code) - Autonomous VS Code coding agent for planning and implementation tasks.
+- [Amazon Q Developer](https://aws.amazon.com/q/developer/build/) - AWS-focused coding assistant for IDEs, terminals, and cloud development tasks.
+- [Tabnine](https://www.tabnine.com/) - Code completion assistant with support for team and enterprise workflows.
+- [Jupyter AI](https://github.com/jupyterlab/jupyter-ai) - AI assistant for JupyterLab and notebooks with support for many local and hosted models.
+
+### Autonomous Software Engineering Agents
+
+- [OpenHands](https://github.com/OpenHands/OpenHands) - Autonomous software engineering agent with shell, browser, and editor workflows.
+- [SWE-agent](https://github.com/SWE-agent/SWE-agent) - Research agent from the SWE-bench team that autonomously fixes GitHub issues.
+- [Devin](https://devin.ai/) - Commercial autonomous software engineering agent.
+- [Prime Agent](https://github.com/PrimeIntellect-ai/prime-agent) - Self-improving RLM agent for coding workflows and long-running autonomous tasks.
+- [GPT Pilot](https://github.com/Pythagora-io/gpt-pilot) - App-building agent designed to keep a developer in the loop.
+
+### Code Review and Documentation
+
+- [CodeRabbit](https://coderabbit.ai/) - AI pull request review assistant for summarizing changes and surfacing issues.
+- [PR-Agent](https://github.com/The-PR-Agent/pr-agent) - Open-source automation for PR review, descriptions, suggestions, and feedback.
+- [Qodo](https://www.qodo.ai/) - AI coding and review workflows focused on tests, pull requests, and code quality.
+- [Mintlify](https://mintlify.com/) - AI-assisted documentation generation for codebases and developer products.
+- [Stenography](https://stenography.dev/) - Tool for generating code explanations and documentation.
+
+### Repository Context Tools
+
+- [Repomix](https://repomix.com/) - Packs source code into structured context files for AI tools.
+- [Gitingest](https://gitingest.com/) - Converts repositories into LLM-friendly text digests.
+- [code-review-graph](https://github.com/tirth8205/code-review-graph) - Local-first code intelligence graph for MCP and CLI that reduces context needed by AI coding tools.
+
+### App and UI Generators
+
+- [v0](https://v0.dev) - Prompt-based UI generation for React and Next.js projects.
+- [Bolt.new](https://bolt.new/) - AI web development agent for building and deploying full-stack apps in the browser.
+- [Lovable](https://lovable.dev) - Conversational app generation for quickly turning product ideas into deployable code.
+- [Replit Agent](https://replit.com/ai) - Replit's agent for generating, running, and deploying full apps inside the browser IDE.
+- [screenshot-to-code](https://github.com/abi/screenshot-to-code) - Converts UI screenshots into frontend code.
+
+### Text-to-SQL
+
+- [Vanna](https://vanna.ai/) - Open-source RAG approach for text-to-SQL and database question answering.
+- [Wren AI](https://www.getwren.ai/oss) - Open-source generative BI and text-to-SQL agent with a semantic layer.
+- [AI2sql](https://www.ai2sql.io/) - Natural-language interface for generating SQL queries.
+
+## Agent Frameworks and Infrastructure
+
+### Orchestration Frameworks
 
 - [LangGraph](https://www.langchain.com/langgraph) - Stateful graph framework for multi-step and multi-agent LLM workflows.
 - [AutoGen](https://microsoft.github.io/autogen/) - Microsoft's framework for building multi-agent conversations and collaboration loops.
@@ -108,67 +122,110 @@ This list is intentionally selective. It favors resources that help developers u
 - [PocketFlow](https://the-pocket.github.io/PocketFlow/) - Minimal agent framework useful for understanding the core mechanics without much abstraction.
 - [MetaGPT](https://github.com/FoundationAgents/MetaGPT) - Multi-agent framework that turns a requirement into product, design, and engineering tasks.
 - [Mastra](https://mastra.ai) - TypeScript framework for agents, workflows, memory, and tool integrations.
-- [PraisonAI](https://github.com/MervinPraison/PraisonAI) - Multi-agent framework with workflows, memory, and tool support.
-- [Hermes Agent](https://hermes-agent.nousresearch.com) - Personal agent platform with memory, messaging integrations, and sandboxed tool execution.
 - [VoltAgent](https://github.com/voltagent/voltagent) - TypeScript framework for agents with tools, memory, and observability hooks.
+- [PraisonAI](https://github.com/MervinPraison/PraisonAI) - Multi-agent framework with workflows, memory, and tool support.
 - [Portia AI](https://www.portialabs.ai/) - Agent framework designed around visible plans, progress updates, and human interruption.
+- [Hermes Agent](https://hermes-agent.nousresearch.com) - Personal agent platform with memory, messaging integrations, and sandboxed tool execution.
+- [DeerFlow](https://github.com/bytedance/deer-flow) - Long-horizon SuperAgent harness with sandboxes, memory, tools, skills, and subagents.
+- [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) - Early autonomous agent project that grew into a platform for building and running AI agents.
+- [LiveKit Agents](https://github.com/livekit/agents) - Framework for building realtime voice and video AI agents.
+- [Swarm Forge](https://github.com/unclebob/swarm-forge) - Simple tool from Robert C. Martin for coordinating several AI agents.
+
+### Skills and Plugins
+
 - [Agent Skills](https://agentskills.io) - Open format and reference SDK for reusable agent capabilities.
 - [agent-skills](https://github.com/addyosmani/agent-skills) - Production-grade engineering skills for AI coding agents, curated by Addy Osmani.
 - [skills](https://github.com/mattpocock/skills) - Matt Pocock's collection of practical engineering skills for coding agents.
 - [Superpowers](https://github.com/obra/superpowers) - Agentic skills framework and software development methodology.
 - [Google Skills](https://github.com/google/skills) - Official Agent Skills for Google products and technologies.
 - [Compound Engineering Plugin](https://github.com/EveryInc/compound-engineering-plugin) - Compound engineering workflows packaged for Claude Code, Codex, Cursor, and other agents.
+
+### Tools, Protocols, and Sandboxes
+
 - [Model Context Protocol](https://modelcontextprotocol.io/) - Open protocol for connecting AI systems to tools, data, and external capabilities.
 - [ToolHive](https://github.com/stacklok/toolhive) - Tool for finding and deploying MCP servers.
+- [Browser Use](https://github.com/browser-use/browser-use) - Library that lets AI agents control a real browser to complete web tasks.
 - [Steel Browser](https://github.com/steel-dev/steel-browser) - Browser automation infrastructure for AI agents, including sessions, screenshots, and proxies.
 - [Notte](https://github.com/nottelabs/notte) - Framework for browser-using AI agents.
-- [Browser Use](https://github.com/browser-use/browser-use) - Library that lets AI agents control a real browser to complete web tasks.
 - [E2B](https://e2b.dev/) - Sandboxed cloud environments for safely running AI-generated code.
 - [Cloudflare Computer](https://github.com/cloudflare/computer) - Sandboxed computer environments that give agents a full machine to work in.
+- [Agent Reach](https://github.com/Panniantong/Agent-Reach) - CLI that gives agents read and search access to Twitter, Reddit, YouTube, GitHub, and more without API fees.
+
+### Memory
+
 - [mem0](https://github.com/mem0ai/mem0) - Memory layer that lets agents retain user context across sessions.
 - [Letta](https://www.letta.com/) - Platform for stateful agents with long-term memory, based on the MemGPT research.
 - [TencentDB Agent Memory](https://github.com/TencentCloud/TencentDB-Agent-Memory) - Team-level memory hub that turns conversations, docs, and code into reusable memory assets shared across agents.
-- [Swarm Forge](https://github.com/unclebob/swarm-forge) - Simple tool from Robert C. Martin for coordinating several AI agents.
-- [LiveKit Agents](https://github.com/livekit/agents) - Framework for building realtime voice and video AI agents.
-- [Agent Reach](https://github.com/Panniantong/Agent-Reach) - CLI that gives agents read and search access to Twitter, Reddit, YouTube, GitHub, and more without API fees.
 
-## LLM App Frameworks
+## LLM App Development
+
+### Application Frameworks
 
 - [LangChain](https://langchain.com/) - Broad framework for LLM apps, chains, agents, retrieval, and integrations.
 - [LlamaIndex](https://www.llamaindex.ai/) - Data framework for connecting LLMs to private, structured, and unstructured knowledge.
 - [Haystack](https://haystack.deepset.ai/) - Modular framework for search, question answering, agents, and RAG pipelines.
 - [DSPy](https://dspy.ai/) - Framework for programming LLM pipelines declaratively and optimizing prompts automatically.
-- [LiteLLM](https://github.com/BerriAI/litellm) - Unified SDK and proxy for calling 100+ LLM providers through the OpenAI format.
+- [LLM App](https://github.com/pathwaycom/llm-app) - Framework for real-time LLM-enabled data pipelines.
+- [SymbolicAI](https://github.com/ExtensityAI/symbolicai) - Neuro-symbolic framework for building LLM-centered applications.
+
+### Structured Output
+
 - [Instructor](https://python.useinstructor.com/) - Library for reliable structured outputs from LLMs using type annotations.
 - [Outlines](https://github.com/dottxt-ai/outlines) - Structured generation library that constrains model output to JSON, regex, or grammars.
+- [LMQL](https://lmql.ai/) - Query language for constraining and composing LLM calls.
+
+### Gateways and Routing
+
+- [LiteLLM](https://github.com/BerriAI/litellm) - Unified SDK and proxy for calling 100+ LLM providers through the OpenAI format.
+- [Portkey](https://portkey.ai/) - LLMOps gateway for monitoring, routing, caching, and governance.
+- [Bifrost](https://github.com/maximhq/bifrost) - Open-source LLM gateway for routing, load balancing, guardrails, and observability.
+- [TensorZero](https://www.tensorzero.com/) - Framework that combines gateway, observability, evaluation, optimization, and experimentation for LLM apps.
+- [Manifest](https://manifest.build) - LLM router for choosing cost-effective models and enforcing usage limits.
+
+### Visual Builders and Platforms
+
 - [Dify](https://dify.ai/) - Open-source platform for visually building and operating LLM apps and agents.
 - [Flowise](https://flowiseai.com/) - Drag-and-drop builder for LLM flows and agents.
 - [Langflow](https://www.langflow.org/) - Visual builder for RAG and multi-agent applications.
+- [Scale GenAI Platform](https://scale.com/genai-platform) - Platform for comparing, building, and deploying generative AI applications.
+
+## RAG and Data Ingestion
+
+### Document Parsing and Web Crawling
+
 - [Docling](https://github.com/docling-project/docling) - Document conversion and ingestion toolkit for AI pipelines.
 - [pdf-inspector](https://github.com/firecrawl/pdf-inspector) - Fast Rust library for PDF inspection, classification, and text extraction with scanned-vs-text detection.
 - [Firecrawl](https://www.firecrawl.dev/) - API that crawls websites and converts them into LLM-ready markdown or structured data.
 - [Crawl4AI](https://github.com/unclecode/crawl4ai) - Open-source web crawler designed for LLM data pipelines.
-- [LLM App](https://github.com/pathwaycom/llm-app) - Framework for real-time LLM-enabled data pipelines.
-- [LMQL](https://lmql.ai/) - Query language for constraining and composing LLM calls.
-- [SymbolicAI](https://github.com/ExtensityAI/symbolicai) - Neuro-symbolic framework for building LLM-centered applications.
-- [Ludwig](https://github.com/ludwig-ai/ludwig) - Low-code system for training and deploying ML and deep learning models.
-- [TensorZero](https://www.tensorzero.com/) - Framework that combines gateway, observability, evaluation, optimization, and experimentation for LLM apps.
-- [Bifrost](https://github.com/maximhq/bifrost) - Open-source LLM gateway for routing, load balancing, guardrails, and observability.
-- [Manifest](https://manifest.build) - LLM router for choosing cost-effective models and enforcing usage limits.
-- [Agentset](https://agentset.ai/) - Platform for building and evaluating RAG and agentic systems.
-- [Scale Spellbook](https://scale.com/genai-platform) - Platform for comparing, building, and deploying generative AI applications.
 
-## RAG, Search, and Knowledge
+### Vector Databases
+
+- [FAISS](https://github.com/facebookresearch/faiss) - Meta's library for efficient similarity search and clustering of dense vectors.
+- [pgvector](https://github.com/pgvector/pgvector) - PostgreSQL extension for vector similarity search.
+- [Qdrant](https://qdrant.tech/) - Open-source vector database and search engine written in Rust.
+- [Weaviate](https://weaviate.io/) - Open-source vector database with hybrid search and modular model integrations.
+- [Milvus](https://milvus.io/) - Distributed vector database built for large-scale similarity search.
+- [Chroma](https://www.trychroma.com/) - Developer-friendly embedding database for LLM applications.
+- [LanceDB](https://lancedb.com/) - Embedded vector database for multimodal AI built on the Lance columnar format.
+
+### RAG Platforms and Knowledge Bases
+
+- [Agentset](https://agentset.ai/) - Platform for building and evaluating RAG and agentic systems.
+- [Semantica](https://github.com/semantica-agi/semantica) - Graph-native infrastructure for context and accountable AI systems.
+- [privateGPT](https://github.com/zylon-ai/private-gpt) - Local document Q&A for private files.
+- [Quivr](https://github.com/QuivrHQ/quivr) - Personal knowledge base that lets users chat with stored files and notes.
+
+## AI Search and Research Assistants
+
+### AI Search
 
 - [Perplexity](https://www.perplexity.ai/) - AI search interface that combines retrieval and generated answers.
 - [Exa](https://exa.ai/) - Search API designed for language-model workflows.
 - [Phind](https://phind.com/) - Developer-focused AI search and answer engine.
 - [You.com](https://you.com/) - AI search engine with personalized and privacy-oriented features.
-- [Semantica](https://github.com/semantica-agi/semantica) - Graph-native infrastructure for context and accountable AI systems.
-- [privateGPT](https://github.com/zylon-ai/private-gpt) - Local document Q&A for private files.
-- [Quivr](https://github.com/QuivrHQ/quivr) - Personal knowledge base that lets users chat with stored files and notes.
-- [LibreChat](https://librechat.ai/) - Open-source multi-provider chat UI for assistant-style workflows.
-- [Chatbot UI](https://www.chatbotui.com/) - Open-source ChatGPT-style interface.
+
+### Research and Notebook Assistants
+
 - [NotebookLM](https://notebooklm.google/) - Gemini-powered tool for working with documents and notes.
 - [Open Notebook](https://www.open-notebook.ai) - Open-source NotebookLM-like system with more local control.
 - [STORM](https://storm.genie.stanford.edu/) - Research assistant that gathers sources and produces citation-backed reports.
@@ -177,25 +234,11 @@ This list is intentionally selective. It favors resources that help developers u
 - [Consensus](https://consensus.app/search/) - Search engine for answers grounded in scientific papers.
 - [SciSpace](https://scispace.com/) - Assistant for reading, explaining, and exploring academic literature.
 
-## Vector Databases
+## Inference and Serving
 
-- [FAISS](https://github.com/facebookresearch/faiss) - Meta's library for efficient similarity search and clustering of dense vectors.
-- [pgvector](https://github.com/pgvector/pgvector) - Postgres extension for vector similarity search.
-- [Qdrant](https://qdrant.tech/) - Open-source vector database and search engine written in Rust.
-- [Weaviate](https://weaviate.io/) - Open-source vector database with hybrid search and modular model integrations.
-- [Milvus](https://milvus.io/) - Distributed vector database built for large-scale similarity search.
-- [Chroma](https://www.trychroma.com/) - Developer-friendly embedding database for LLM applications.
-- [LanceDB](https://lancedb.com/) - Embedded vector database for multimodal AI built on the Lance columnar format.
-
-## Local LLMs and Inference
+### Local Engines and Runtimes
 
 - [Ollama](https://github.com/ollama/ollama) - Simple local runner for open-weight language models.
-- [LM Studio](https://lmstudio.ai) - Desktop app for discovering, downloading, and running local models.
-- [Open WebUI](https://github.com/open-webui/open-webui) - Self-hosted web interface for local and remote LLMs.
-- [Jan](https://jan.ai/) - Local-first desktop AI app that can run offline or connect to APIs.
-- [Msty](https://msty.ai/) - Desktop interface for working with local and hosted AI models.
-- [LLM](https://llm.datasette.io/) - Simon Willison's CLI and Python library for using local and remote LLMs.
-- [gpt4all](https://github.com/nomic-ai/gpt4all) - Local model ecosystem with desktop app and bindings.
 - [llama.cpp](https://github.com/ggml-org/llama.cpp) - Efficient C/C++ inference for LLaMA-style models and many derivatives.
 - [vLLM](https://github.com/vllm-project/vllm) - High-throughput inference and serving engine built around PagedAttention.
 - [SGLang](https://github.com/sgl-project/sglang) - Fast serving framework for LLMs and vision-language models.
@@ -206,8 +249,21 @@ This list is intentionally selective. It favors resources that help developers u
 - [whisper.cpp](https://github.com/ggml-org/whisper.cpp) - C/C++ implementation of Whisper for local speech recognition.
 - [ds4](https://github.com/antirez/ds4) - DeepSeek 4 Flash and PRO local inference engine for Metal, CUDA, and ROCm by antirez.
 - [AirLLM](https://github.com/lyogavin/airllm) - Runs 70B model inference on a single 4GB GPU via layered loading.
+- [gpt4all](https://github.com/nomic-ai/gpt4all) - Local model ecosystem with desktop app and bindings.
+- [LLM](https://llm.datasette.io/) - Simon Willison's CLI and Python library for using local and remote LLMs.
 - [Harbor](https://github.com/av/harbor) - Containerized stack for running local model backends, UIs, and supporting services.
 - [RunThisLLM](https://runthisllm.com) - Hardware-oriented guide for choosing models that can run locally.
+
+### Desktop Apps and Chat UIs
+
+- [LM Studio](https://lmstudio.ai) - Desktop app for discovering, downloading, and running local models.
+- [Open WebUI](https://github.com/open-webui/open-webui) - Self-hosted web interface for local and remote LLMs.
+- [LibreChat](https://librechat.ai/) - Open-source multi-provider chat UI for assistant-style workflows.
+- [Jan](https://jan.ai/) - Local-first desktop AI app that can run offline or connect to APIs.
+- [Msty](https://msty.ai/) - Desktop interface for working with local and hosted AI models.
+
+### Hosted Inference
+
 - [OpenRouter](https://openrouter.ai/) - Unified API for accessing many hosted models through one interface.
 - [Together AI](https://www.together.ai/) - Hosted training, fine-tuning, and inference for open models.
 - [Groq](https://groq.com/) - Fast cloud inference for supported open models using LPU hardware.
@@ -231,16 +287,30 @@ This list is intentionally selective. It favors resources that help developers u
 - [MiniMax](https://www.minimax.io/) - Multimodal foundation models spanning text, speech, video, and music.
 - [Hugging Face](https://huggingface.co/) - Hub for open models, datasets, and machine learning tooling.
 
-## Evals, Observability, and LLMOps
+## Fine-Tuning and Training
+
+- [Unsloth](https://unsloth.ai) - Library for faster and more memory-efficient LLM fine-tuning.
+- [Axolotl](https://github.com/axolotl-ai-cloud/axolotl) - Streamlined fine-tuning tool covering many model architectures via YAML configs.
+- [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) - Unified fine-tuning framework for 100+ models with a web UI.
+- [TRL](https://github.com/huggingface/trl) - Hugging Face library for post-training models with SFT, DPO, and RLHF.
+- [Kiln](https://getkiln.ai) - App for synthetic data, fine-tuning, and model-building workflows.
+- [Ludwig](https://github.com/ludwig-ai/ludwig) - Low-code system for training and deploying ML and deep learning models.
+
+## Evals, Observability, and Security
+
+### Evaluation Frameworks
 
 - [OpenAI Evals](https://github.com/openai/evals) - Framework for writing and running model evaluation suites.
-- [Langfuse](https://langfuse.com/) - Open-source tracing, prompt management, metrics, and evaluation platform.
-- [LangSmith](https://www.langchain.com/langsmith) - LangChain's platform for tracing, evaluating, and monitoring LLM applications.
 - [promptfoo](https://www.promptfoo.dev/) - Open-source CLI for testing prompts, running evals, and red-teaming LLM apps.
 - [DeepEval](https://github.com/confident-ai/deepeval) - Open-source LLM evaluation framework with pytest-style tests.
 - [Ragas](https://github.com/explodinggradients/ragas) - Evaluation toolkit focused on RAG pipeline quality.
 - [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) - EleutherAI's standard framework for benchmarking language models.
 - [Inspect](https://inspect.aisi.org.uk/) - UK AI Security Institute's framework for large language model evaluations.
+
+### Observability and LLMOps
+
+- [Langfuse](https://langfuse.com/) - Open-source tracing, prompt management, metrics, and evaluation platform.
+- [LangSmith](https://www.langchain.com/langsmith) - LangChain's platform for tracing, evaluating, and monitoring LLM applications.
 - [Braintrust](https://www.braintrust.dev/) - Platform for evals, prompt iteration, and logging in AI products.
 - [Phoenix](https://phoenix.arize.com/) - Open-source observability for ML and LLM applications.
 - [OpenLIT](https://github.com/openlit/openlit) - OpenTelemetry-native observability for generative AI apps.
@@ -248,70 +318,99 @@ This list is intentionally selective. It favors resources that help developers u
 - [Opik](https://github.com/comet-ml/opik) - Open-source tracing, evaluation, and monitoring platform for LLM systems.
 - [MLflow](https://mlflow.org/) - Experiment tracking, model deployment, and evaluation platform with LLM support.
 - [Agenta](https://agenta.ai/) - Open-source platform for prompt management, evaluation, and production monitoring.
-- [Portkey](https://portkey.ai/) - LLMOps gateway for monitoring, routing, caching, and governance.
 - [Maxim AI](https://www.getmaxim.ai/) - Evaluation and observability platform for shipping AI products with quality checks.
+- [OpenAI Downtime Monitor](https://status.portkey.ai/) - Public status and latency tracker for major LLM APIs.
+
+### Security, Privacy, and Guardrails
+
 - [Cleanlab TLM](https://cleanlab.ai/tlm/) - API for detecting unreliable or hallucinated LLM outputs.
 - [Prediction Guard](https://www.predictionguard.com/) - Controlled LLM access with privacy, safety, and compliance features.
 - [rehydra](https://github.com/rehydra-ai/rehydra-sdk) - Local PII anonymization and rehydration SDK for LLM prompts.
 - [Agentic Radar](https://github.com/splx-ai/agentic-radar) - Security scanner for agentic workflows.
-- [OpenAI Downtime Monitor](https://status.portkey.ai/) - Public status and latency tracker for major LLM APIs.
+
+## Benchmarks and Leaderboards
+
+### Leaderboards
+
 - [Artificial Analysis](https://artificialanalysis.ai/) - Independent model comparisons across quality, price, speed, and hosting.
-- [LMArena](https://lmarena.ai/leaderboard) - Human-preference leaderboard for model comparison.
+- [LMArena](https://lmarena.ai/leaderboard) - Crowdsourced human-preference leaderboard for model comparison.
 - [OpenRouter Rankings](https://openrouter.ai/rankings) - Usage-based model rankings from OpenRouter traffic.
 - [SEAL LLM Leaderboard](https://labs.scale.com/leaderboard) - Expert-driven model benchmark leaderboard.
 - [LLM Stats](https://llm-stats.com/) - Model comparison site covering context windows, price, speed, and benchmarks.
+
+### Benchmarks
+
 - [SWE-bench](https://www.swebench.com/) - Benchmark for software engineering tasks based on real GitHub issues.
-- [Terminal-Bench](https://www.tbench.ai/leaderboards) - Benchmark for terminal-based agent performance.
+- [Terminal-Bench](https://www.tbench.ai/) - Benchmark for terminal-based agent performance.
 
 ## Prompting and Playgrounds
+
+### Playgrounds and Tools
 
 - [OpenAI Playground](https://platform.openai.com/playground) - Browser workspace for testing prompts, models, and API behavior.
 - [Google AI Studio](https://aistudio.google.com/) - Prototyping environment for Gemini models and prompts.
 - [GitHub Models](https://github.com/marketplace/models) - Model exploration and prototyping directly inside GitHub.
-- [OpenAI Prompt Engineering Guide](https://platform.openai.com/docs/guides/prompt-engineering) - Official tactics for improving prompt reliability.
-- [DeepLearning.AI: ChatGPT Prompt Engineering for Developers](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/) - Short course on prompts for developer workflows.
-- [Anthropic Courses](https://github.com/anthropics/courses) - Educational notebooks and material for working with Anthropic models.
 - [PromptPerfect](https://promptperfect.jina.ai/) - Tooling for prompt iteration and optimization.
-- [GPT for Sheets and Docs](https://workspace.google.com/marketplace/app/gpt_for_sheets_and_docs/677318054654) - Spreadsheet and document extension for prompt-driven workflows.
-- [ChatGPT for Jupyter](https://github.com/TiesdeKok/chat-gpt-jupyter-extension) - Jupyter extension for notebook-based prompting and assistance.
+
+### Guides and Courses
+
+- [OpenAI Prompt Engineering Guide](https://platform.openai.com/docs/guides/prompt-engineering) - Official tactics for improving prompt reliability.
+- [Learn Prompting](https://learnprompting.org/) - Open educational material for prompting, structured outputs, and AI safety basics.
+- [Prompt Engineering Guide](https://github.com/dair-ai/Prompt-Engineering-Guide) - Community-maintained notes and examples for prompt design.
+- [Anthropic Courses](https://github.com/anthropics/courses) - Educational notebooks and material for working with Anthropic models.
+- [DeepLearning.AI: ChatGPT Prompt Engineering for Developers](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/) - Short course on prompts for developer workflows.
 
 ## Machine Learning and Deep Learning
 
+### Frameworks and Libraries
+
 - [PyTorch](https://github.com/pytorch/pytorch) - Popular deep learning framework with dynamic computation graphs and strong research adoption.
 - [TensorFlow](https://www.tensorflow.org) - End-to-end ML framework for training, deployment, and production pipelines.
-- [Keras](http://keras.io) - High-level neural network API for fast experimentation.
-- [MXNet](https://github.com/dmlc/mxnet/) - Deep learning framework with distributed and multi-language support.
-- [PaddlePaddle](https://github.com/baidu/paddle) - Baidu's deep learning platform for research and production.
-- [DeepLearning4J](http://deeplearning4j.org/) - JVM-based deep learning framework.
-- [mlpack](http://mlpack.org/) - C++ machine learning library focused on speed and scalability.
+- [Keras](https://keras.io) - High-level neural network API for fast experimentation.
+- [scikit-learn](https://scikit-learn.org/) - Core Python toolkit for classical machine learning.
+- [PaddlePaddle](https://github.com/PaddlePaddle/Paddle) - Baidu's deep learning platform for research and production.
+- [DeepLearning4J](https://deeplearning4j.konduit.ai/) - JVM-based deep learning framework.
+- [mlpack](https://www.mlpack.org/) - C++ machine learning library focused on speed and scalability.
 - [cuDNN](https://developer.nvidia.com/cuDNN) - NVIDIA GPU-accelerated primitives for deep neural networks.
 - [Gymnasium](https://github.com/Farama-Foundation/Gymnasium) - Toolkit for reinforcement learning environments and algorithm comparison.
+- [Albumentations](https://github.com/albumentations-team/albumentations) - Fast image augmentation library for computer vision pipelines.
+
+### Tooling
+
+- [Jupyter Notebook](https://jupyter.org) - Interactive notebook environment widely used for ML experiments and analysis.
 - [TensorBoard](https://github.com/tensorflow/tensorboard) - Visualization toolkit for model training and experiments.
 - [Netron](https://github.com/lutzroeder/netron) - Viewer for neural network, ONNX, and ML model files.
-- [Jupyter Notebook](http://jupyter.org) - Interactive notebook environment widely used for ML experiments and analysis.
-- [Scikit-Learn](https://scikit-learn.org/) - Core Python toolkit for classical machine learning.
-- [Albumentations](https://github.com/albu/albumentations) - Fast image augmentation library for computer vision pipelines.
 - [Activeloop](https://www.activeloop.ai/) - Dataset management and streaming platform for computer vision and AI workloads.
-- [Unsloth](https://unsloth.ai) - Library for faster and more memory-efficient LLM fine-tuning.
-- [Axolotl](https://github.com/axolotl-ai-cloud/axolotl) - Streamlined fine-tuning tool covering many model architectures via YAML configs.
-- [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) - Unified fine-tuning framework for 100+ models with a web UI.
-- [TRL](https://github.com/huggingface/trl) - Hugging Face library for post-training models with SFT, DPO, and RLHF.
-- [Kiln](https://getkiln.ai) - App for synthetic data, fine-tuning, and model-building workflows.
+
+### Classic Datasets
+
+- [MNIST](http://yann.lecun.com/exdb/mnist/) - Classic handwritten digit dataset for introductory vision models.
+- [Fashion-MNIST](https://github.com/zalandoresearch/fashion-mnist) - Drop-in MNIST alternative using fashion product images.
+- [CIFAR-10 and CIFAR-100](https://www.cs.toronto.edu/~kriz/cifar.html) - Small image classification datasets for model experiments.
+- [ImageNet](https://www.image-net.org/) - Large-scale visual recognition dataset that shaped modern computer vision.
+- [COCO](https://cocodataset.org/) - Detection, segmentation, captioning, and keypoint dataset for vision systems.
+- [Open Images](https://storage.googleapis.com/openimages/web/index.html) - Large annotated image dataset for classification, detection, and segmentation.
+- [Pascal VOC 2012](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/index.html#devkit) - Object detection and segmentation benchmark.
+- [Visual Question Answering](https://visualqa.org/) - Benchmark for answering natural-language questions about images.
+- [YouTube-8M](https://research.google.com/youtube8m/) - Large-scale labeled video dataset.
+- [DeepMind QA Corpus](https://github.com/google-deepmind/rc-data) - Reading comprehension dataset built from CNN and Daily Mail articles.
+- [UC Irvine Machine Learning Repository](https://archive.ics.uci.edu/) - Broad collection of datasets for classical ML tasks.
 
 ## Multimodal AI
 
-### Image
+### Image and 3D
 
 - [Stable Diffusion](https://huggingface.co/CompVis/stable-diffusion-v1-4) - Open text-to-image diffusion model ecosystem.
 - [Flux](https://github.com/black-forest-labs/flux) - High-quality text-to-image models from Black Forest Labs.
 - [Midjourney](https://www.midjourney.com/) - Widely used image generation service for stylized and photorealistic outputs.
 - [Ideogram](https://ideogram.ai/) - Image generation platform with strong text rendering.
-- [Adobe Firefly](https://www.adobe.com/sensei/generative-ai/firefly.html) - Creative Cloud integrated image generation and editing tools.
+- [Adobe Firefly](https://firefly.adobe.com/) - Creative Cloud integrated image generation and editing tools.
 - [ComfyUI](https://github.com/comfyanonymous/ComfyUI) - Node-based interface for Stable Diffusion and image-generation workflows.
 - [Civitai](https://civitai.com/) - Community hub for sharing diffusion models, LoRAs, and workflows.
 - [Lexica](https://lexica.art/) - Search engine for Stable Diffusion images and prompts.
 - [PromptHero](https://prompthero.com/) - Prompt search and inspiration across major image models.
-- [Hugging Face Diffusion Models Course](https://github.com/huggingface/diffusion-models-class) - Course material for learning diffusion models in Python.
+- [DiffusionDB](https://poloclub.github.io/diffusiondb/) - Large-scale dataset of Stable Diffusion prompts and generated images.
+- [TRELLIS.2](https://github.com/microsoft/TRELLIS.2) - Microsoft's native and compact structured latents for 3D generation.
 
 ### Video
 
@@ -338,27 +437,6 @@ This list is intentionally selective. It favors resources that help developers u
 - [speech-to-speech](https://github.com/huggingface/speech-to-speech) - Hugging Face toolkit for building local voice agents with open-source models.
 - [Suno](https://suno.com/) - Text-to-music generation platform.
 - [Udio](https://www.udio.com/) - Music generation platform for creating and sharing songs.
-
-### 3D
-
-- [TRELLIS.2](https://github.com/microsoft/TRELLIS.2) - Microsoft's native and compact structured latents for 3D generation.
-
-## Datasets and Benchmarks
-
-- [MNIST](http://yann.lecun.com/exdb/mnist/) - Classic handwritten digit dataset for introductory vision models.
-- [CIFAR-10 and CIFAR-100](http://www.cs.toronto.edu/~kriz/cifar.html) - Small image classification datasets for model experiments.
-- [ImageNet](http://www.image-net.org/) - Large-scale visual recognition dataset that shaped modern computer vision.
-- [Microsoft COCO](http://mscoco.org/home/) - Detection, segmentation, captioning, and keypoint dataset for vision systems.
-- [Visual Question Answering](http://www.visualqa.org/) - Benchmark for answering natural-language questions about images.
-- [UC Irvine Machine Learning Repository](http://archive.ics.uci.edu/ml/) - Broad collection of datasets for classical ML tasks.
-- [YouTube-8M](https://research.google.com/youtube8m/) - Large-scale labeled video dataset.
-- [Open Images](https://github.com/openimages/dataset) - Large annotated image dataset for classification, detection, and segmentation.
-- [Pascal VOC 2012](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/index.html#devkit) - Object detection and segmentation benchmark.
-- [Fashion-MNIST](https://github.com/zalandoresearch/fashion-mnist) - Drop-in MNIST alternative using fashion product images.
-- [DeepMind QA Corpus](https://github.com/deepmind/rc-data) - Reading comprehension dataset built from CNN and Daily Mail articles.
-- [DiffusionDB](https://diffusiondb.com/) - Dataset and resource collection around Stable Diffusion prompts and generations.
-- [LMArena Leaderboard](https://lmarena.ai/leaderboard) - Crowdsourced preference benchmark for AI models.
-- [Artificial Analysis](https://artificialanalysis.ai/) - Benchmark hub for model quality, latency, throughput, and cost.
 
 ## Courses and Books
 
@@ -388,60 +466,77 @@ This list is intentionally selective. It favors resources that help developers u
 ### Courses
 
 - [DeepLearning.AI Short Courses](https://learn.deeplearning.ai/) - Focused, practical short courses on LLMs, agents, evaluation, and prompting.
-- [Stanford CS324: Large Language Models](https://stanford-cs324.github.io/winter2022/) - University course on LLM capabilities, training, and societal impact.
-- [MIT 6.S191: Introduction to Deep Learning](https://introtodeeplearning.com/) - Fast-paced MIT course on modern deep learning.
-- [Stanford CS231n](http://vision.stanford.edu/teaching/cs231n/syllabus.html) - Convolutional neural networks and computer vision.
-- [Stanford CS224n](http://web.stanford.edu/class/cs224n/) - Natural language processing with deep learning.
-- [Berkeley Deep Reinforcement Learning](http://rll.berkeley.edu/deeprlcourse/) - Course material on deep RL methods and applications.
-- [Google Generative AI Learning Path](https://www.cloudskillsboost.google/paths/118) - Introductory path for generative AI concepts and Google tooling.
-- [Google DeepMind Introduction to Reinforcement Learning](https://www.youtube.com/playlist?list=PLqYmG7hTraZDM-OYHWgPebj2MfCFzFObQ) - Video course on RL fundamentals.
 - [Karpathy: Neural Networks Zero to Hero](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ) - Bottom-up neural network and language-model implementation series.
+- [Stanford CS324: Large Language Models](https://stanford-cs324.github.io/winter2022/) - University course on LLM capabilities, training, and societal impact.
+- [Stanford CS224n](http://web.stanford.edu/class/cs224n/) - Natural language processing with deep learning.
+- [Stanford CS231n](https://cs231n.stanford.edu/) - Convolutional neural networks and computer vision.
+- [MIT 6.S191: Introduction to Deep Learning](https://introtodeeplearning.com/) - Fast-paced MIT course on modern deep learning.
+- [MIT 6.S099: Artificial General Intelligence](https://agi.mit.edu) - MIT course and lecture material on AGI.
+- [Berkeley Deep Reinforcement Learning](http://rll.berkeley.edu/deeprlcourse/) - Course material on deep RL methods and applications.
+- [Google DeepMind Introduction to Reinforcement Learning](https://www.youtube.com/playlist?list=PLqYmG7hTraZDM-OYHWgPebj2MfCFzFObQ) - Video course on RL fundamentals.
+- [Hugging Face Diffusion Models Course](https://github.com/huggingface/diffusion-models-class) - Course material for learning diffusion models in Python.
+- [Google Generative AI Learning Path](https://www.cloudskillsboost.google/paths/118) - Introductory path for generative AI concepts and Google tooling.
 - [Generative AI for Beginners](https://github.com/microsoft/generative-ai-for-beginners) - Microsoft's 21-lesson course on building with generative AI.
 - [AI for Beginners](https://github.com/microsoft/AI-For-Beginners) - Microsoft's 12-week, 24-lesson introductory AI curriculum.
-- [AI for Everyone](https://www.deeplearning.ai/ai-for-everyone/) - Non-technical overview of AI strategy and capabilities.
+- [AI for Everyone](https://www.deeplearning.ai/courses/ai-for-everyone/) - Non-technical overview of AI strategy and capabilities.
 
 ## Papers and Research Context
+
+### Language Models and Alignment
 
 - [Attention Is All You Need](https://arxiv.org/abs/1706.03762) - Introduced the transformer architecture behind modern LLMs.
 - [Scaling Laws for Neural Language Models](https://arxiv.org/abs/2001.08361) - Shows how language model performance scales with compute, data, and parameters.
 - [Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165) - GPT-3 paper that popularized few-shot prompting at scale.
+- [Training Language Models to Follow Instructions with Human Feedback](https://arxiv.org/abs/2203.02155) - InstructGPT paper that established the RLHF recipe behind modern assistants.
 - [Constitutional AI](https://arxiv.org/abs/2212.08073) - Alignment approach using model-written principles and critiques.
 - [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](https://arxiv.org/abs/2201.11903) - Showed that step-by-step prompting unlocks reasoning in large models.
-- [Training Language Models to Follow Instructions with Human Feedback](https://arxiv.org/abs/2203.02155) - InstructGPT paper that established the RLHF recipe behind modern assistants.
-- [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401) - Original RAG paper combining retrieval with generation.
 - [ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629) - Interleaved reasoning and tool use, the pattern behind most LLM agents.
+- [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401) - Original RAG paper combining retrieval with generation.
 - [LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/2106.09685) - Parameter-efficient fine-tuning method that became the default for adapting LLMs.
 - [FlashAttention](https://arxiv.org/abs/2205.14135) - IO-aware exact attention algorithm that made long contexts practical.
 - [DeepSeek-R1](https://arxiv.org/abs/2501.12948) - Reasoning model trained with reinforcement learning, released with open weights.
+
+### Deep Learning Classics
+
 - [ImageNet Classification with Deep Convolutional Neural Networks](http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf) - AlexNet paper that accelerated deep learning adoption in vision.
-- [Batch Normalization](https://arxiv.org/abs/1502.03167) - Training technique that stabilizes and accelerates deep neural networks.
-- [Residual Learning](https://arxiv.org/pdf/1512.03385v1.pdf) - ResNet paper that enabled much deeper vision networks.
 - [Sequence to Sequence Learning with Neural Networks](http://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf) - Early neural sequence transduction work for translation and related tasks.
 - [Neural Turing Machines](http://arxiv.org/pdf/1410.5401v2.pdf) - Research on neural networks augmented with differentiable memory.
+- [Batch Normalization](https://arxiv.org/abs/1502.03167) - Training technique that stabilizes and accelerates deep neural networks.
+- [Residual Learning](https://arxiv.org/pdf/1512.03385v1.pdf) - ResNet paper that enabled much deeper vision networks.
 - [Mastering the Game of Go with Deep Neural Networks and Tree Search](http://www.nature.com/nature/journal/v529/n7587/pdf/nature16961.pdf) - AlphaGo paper combining deep learning and tree search.
+
+### AGI and Safety
+
 - [Artificial General Intelligence: Concept, State of the Art and Future Prospects](https://content.sciendo.com/view/journals/jagi/5/1/article-p1.xml) - Ben Goertzel's overview of AGI as a research program.
 - [Mapping the Landscape of Human-Level Artificial General Intelligence](https://www.aaai.org/ojs/index.php/aimagazine/article/view/2322) - Survey-style map of AGI concepts and approaches.
 - [Universal Intelligence: A Definition of Machine Intelligence](https://arxiv.org/abs/0712.3329) - Formal discussion of machine intelligence definitions.
 - [The AGI Containment Problem](https://arxiv.org/abs/1604.00545) - Research framing around containment and control of advanced AI systems.
 
-## Communities, News, and Related Lists
+## Newsletters, Blogs, and Communities
 
-- [AI Engineer Newsletter](https://newsletter.owainlewis.com) - Newsletter focused on AI engineering and practical LLM development.
-- [Latent Space](https://www.latent.space/) - Podcast and newsletter for AI engineers.
+### Newsletters, Blogs, and Podcasts
+
 - [Simon Willison's Weblog](https://simonwillison.net/) - Prolific blog tracking practical LLM tools and developments.
 - [Lil'Log](https://lilianweng.github.io/) - Lilian Weng's in-depth technical posts on deep learning and LLM research.
-- [r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/) - Reddit community for running and fine-tuning local models.
+- [Latent Space](https://www.latent.space/) - Podcast and newsletter for AI engineers.
+- [AI Engineer Newsletter](https://newsletter.owainlewis.com) - Newsletter focused on AI engineering and practical LLM development.
 - [The Rundown AI](https://www.therundown.ai/) - General AI news and product updates.
 - [AlphaSignal](https://alphasignal.ai/) - AI research and engineering updates.
 - [Superhuman AI](https://www.superhuman.ai/) - AI tools and workflow-oriented newsletter.
 - [Lex Fridman AI Podcast](https://lexfridman.com/ai/) - Long-form conversations on AI, science, engineering, and philosophy.
-- [Journal of Artificial General Intelligence](https://content.sciendo.com/view/journals/jagi/jagi-overview.xml) - Research journal dedicated to AGI.
-- [MIT 6.S099: Artificial General Intelligence](https://agi.mit.edu) - MIT course and lecture material on AGI.
+
+### Communities and Research Organizations
+
+- [r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/) - Reddit community for running and fine-tuning local models.
 - [OpenAI](https://openai.com/) - AI research and product organization.
 - [Google DeepMind](https://deepmind.google/) - AI research lab working across models, science, and general intelligence.
 - [Machine Intelligence Research Institute](https://intelligence.org/research-guide/) - Research organization focused on advanced AI safety.
 - [OpenCog](http://opencog.org/) - Open-source project exploring AGI architectures.
 - [Numenta](https://numenta.com/) - Research organization studying intelligence and brain-inspired computation.
+- [Journal of Artificial General Intelligence](https://content.sciendo.com/view/journals/jagi/jagi-overview.xml) - Research journal dedicated to AGI.
+
+## Related Lists
+
 - [Awesome RAG Production](https://github.com/Yigtwxx/Awesome-RAG-Production) - Curated resources for production retrieval-augmented generation.
 - [Open LLMs](https://github.com/eugeneyan/open-llms) - Curated list of commercially usable open LLMs.
 - [Awesome ChatGPT](https://github.com/humanloop/awesome-chatgpt) - Resources, demos, and tools around ChatGPT-style applications.
