@@ -46,6 +46,7 @@ This list is intentionally selective. It favors resources that help developers u
 - [Zed](https://zed.dev/) - High-performance code editor with built-in AI editing and agentic workflows.
 - [Kiro](https://kiro.dev/) - Agentic IDE from AWS built around spec-driven development.
 - [Google Antigravity](https://antigravity.google/) - Agent-first IDE from Google where autonomous agents plan, execute, and verify software tasks with artifacts and browser verification.
+- [Orca](https://github.com/stablyai/orca) - Agent development environment for running a fleet of parallel coding agents with your own subscriptions on desktop, mobile, and remote runtimes.
 
 ### Terminal Coding Agents
 
@@ -92,6 +93,7 @@ This list is intentionally selective. It favors resources that help developers u
 - [Repomix](https://repomix.com/) - Packs source code into structured context files for AI tools.
 - [Gitingest](https://gitingest.com/) - Converts repositories into LLM-friendly text digests.
 - [code-review-graph](https://github.com/tirth8205/code-review-graph) - Local-first code intelligence graph for MCP and CLI that reduces context needed by AI coding tools.
+- [code-graph-rag](https://github.com/vitali87/code-graph-rag) - Graph-based RAG for querying, understanding, and editing multi-language monorepos.
 
 ### App and UI Generators
 
@@ -130,6 +132,14 @@ This list is intentionally selective. It favors resources that help developers u
 - [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) - Early autonomous agent project that grew into a platform for building and running AI agents.
 - [LiveKit Agents](https://github.com/livekit/agents) - Framework for building realtime voice and video AI agents.
 - [Swarm Forge](https://github.com/unclebob/swarm-forge) - Simple tool from Robert C. Martin for coordinating several AI agents.
+- [Embabel Agent](https://github.com/embabel/embabel-agent) - Kotlin framework for agentic flows on the JVM that mixes LLM prompts with typed domain models and goal-directed planning.
+- [ruflo](https://github.com/ruvnet/ruflo) - Agent meta-harness for deploying multi-agent swarms and coordinating autonomous workflows.
+
+### Agent Workspaces
+
+- [Paperclip](https://github.com/paperclipai/paperclip) - Open-source app for managing and coordinating AI agents at work.
+- [holaOS](https://github.com/holaboss-ai/holaOS) - Open-source agent workspace that runs Claude Code, Codex, and other agents across 100+ tool integrations.
+- [Apache Maka](https://github.com/apache/maka) - Local-first AI agent workspace, incubating at Apache, that models messages, tool calls, results, and permissions.
 
 ### Skills and Plugins
 
@@ -139,6 +149,16 @@ This list is intentionally selective. It favors resources that help developers u
 - [Superpowers](https://github.com/obra/superpowers) - Agentic skills framework and software development methodology.
 - [Google Skills](https://github.com/google/skills) - Official Agent Skills for Google products and technologies.
 - [Compound Engineering Plugin](https://github.com/EveryInc/compound-engineering-plugin) - Compound engineering workflows packaged for Claude Code, Codex, Cursor, and other agents.
+- [Anthropic Skills](https://github.com/anthropics/skills) - Anthropic's public repository of official and example Agent Skills.
+- [Spec Kit](https://github.com/github/spec-kit) - GitHub's toolkit for spec-driven development with coding agents.
+- [Cursor Plugins](https://github.com/cursor/plugins) - Cursor plugin specification and official plugins.
+- [andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) - Single CLAUDE.md that improves Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding.
+- [ECC](https://github.com/affaan-m/ECC) - Agent harness optimization system with skills, memory, and security rules for Claude Code, Codex, OpenCode, and Cursor.
+- [Agency Agents](https://github.com/msitarzewski/agency-agents) - Large collection of role-based agent personas spanning engineering, design, marketing, and operations.
+- [Caveman](https://github.com/JuliusBrussee/caveman) - Claude Code skill that cuts token usage by forcing terse responses.
+- [Diagram Design](https://github.com/cathrynlavery/diagram-design) - Claude Code skill with 29 editorial diagram types rendered as self-contained HTML and SVG.
+- [Obsidian Skills](https://github.com/kepano/obsidian-skills) - Agent skills for working with the Obsidian CLI and its open formats.
+- [Anthropic Cybersecurity Skills](https://github.com/mukul975/Anthropic-Cybersecurity-Skills) - Community collection of 800+ structured cybersecurity skills for agents, mapped to MITRE ATT&CK, NIST CSF 2.0, and other frameworks.
 
 ### Tools, Protocols, and Sandboxes
 
@@ -150,12 +170,16 @@ This list is intentionally selective. It favors resources that help developers u
 - [E2B](https://e2b.dev/) - Sandboxed cloud environments for safely running AI-generated code.
 - [Cloudflare Computer](https://github.com/cloudflare/computer) - Sandboxed computer environments that give agents a full machine to work in.
 - [Agent Reach](https://github.com/Panniantong/Agent-Reach) - CLI that gives agents read and search access to Twitter, Reddit, YouTube, GitHub, and more without API fees.
+- [CLI-Anything](https://github.com/HKUDS/CLI-Anything) - Generates agent-ready CLIs for existing software and hosts a hub of community-built ones.
+- [ego lite](https://github.com/citrolabs/ego-lite) - Browser designed for agents and humans to share, so automation runs in parallel with access to your real logins and tabs.
 
 ### Memory
 
 - [mem0](https://github.com/mem0ai/mem0) - Memory layer that lets agents retain user context across sessions.
 - [Letta](https://www.letta.com/) - Platform for stateful agents with long-term memory, based on the MemGPT research.
 - [TencentDB Agent Memory](https://github.com/TencentCloud/TencentDB-Agent-Memory) - Team-level memory hub that turns conversations, docs, and code into reusable memory assets shared across agents.
+- [OpenViking](https://github.com/volcengine/OpenViking) - Open-source context database for agents that exposes memories, resources, and skills as a browsable virtual filesystem with tiered loading.
+- [ai-memory](https://github.com/akitaonrails/ai-memory) - Long-term memory for agent coding CLIs that also enables handoff between different agent vendors.
 
 ## LLM App Development
 
@@ -181,6 +205,7 @@ This list is intentionally selective. It favors resources that help developers u
 - [Bifrost](https://github.com/maximhq/bifrost) - Open-source LLM gateway for routing, load balancing, guardrails, and observability.
 - [TensorZero](https://www.tensorzero.com/) - Framework that combines gateway, observability, evaluation, optimization, and experimentation for LLM apps.
 - [Manifest](https://manifest.build) - LLM router for choosing cost-effective models and enforcing usage limits.
+- [Switchyard](https://github.com/NVIDIA-NeMo/Switchyard) - NVIDIA router that spreads LLM traffic across models and providers while preserving native OpenAI and Anthropic APIs.
 
 ### Visual Builders and Platforms
 
@@ -188,6 +213,7 @@ This list is intentionally selective. It favors resources that help developers u
 - [Flowise](https://flowiseai.com/) - Drag-and-drop builder for LLM flows and agents.
 - [Langflow](https://www.langflow.org/) - Visual builder for RAG and multi-agent applications.
 - [Scale GenAI Platform](https://scale.com/genai-platform) - Platform for comparing, building, and deploying generative AI applications.
+- [n8n](https://n8n.io/) - Fair-code workflow automation platform with native AI agent nodes that combines visual building with custom code.
 
 ## RAG and Data Ingestion
 
@@ -207,10 +233,12 @@ This list is intentionally selective. It favors resources that help developers u
 - [Milvus](https://milvus.io/) - Distributed vector database built for large-scale similarity search.
 - [Chroma](https://www.trychroma.com/) - Developer-friendly embedding database for LLM applications.
 - [LanceDB](https://lancedb.com/) - Embedded vector database for multimodal AI built on the Lance columnar format.
+- [turbovec](https://github.com/RyanCodrai/turbovec) - Vector index built on TurboQuant, written in Rust with Python bindings.
 
 ### RAG Platforms and Knowledge Bases
 
 - [Agentset](https://agentset.ai/) - Platform for building and evaluating RAG and agentic systems.
+- [RAGFlow](https://github.com/infiniflow/ragflow) - Open-source RAG engine with deep document understanding and agent workflows.
 - [Semantica](https://github.com/semantica-agi/semantica) - Graph-native infrastructure for context and accountable AI systems.
 - [privateGPT](https://github.com/zylon-ai/private-gpt) - Local document Q&A for private files.
 - [Quivr](https://github.com/QuivrHQ/quivr) - Personal knowledge base that lets users chat with stored files and notes.
@@ -253,6 +281,9 @@ This list is intentionally selective. It favors resources that help developers u
 - [LLM](https://llm.datasette.io/) - Simon Willison's CLI and Python library for using local and remote LLMs.
 - [Harbor](https://github.com/av/harbor) - Containerized stack for running local model backends, UIs, and supporting services.
 - [RunThisLLM](https://runthisllm.com) - Hardware-oriented guide for choosing models that can run locally.
+- [llmfit](https://github.com/AlexsJones/llmfit) - CLI that checks hundreds of models and providers to find what runs on your hardware.
+- [oMLX](https://github.com/jundot/omlx) - LLM inference server for Apple Silicon with continuous batching and SSD caching, managed from the macOS menu bar.
+- [Modular MAX](https://github.com/modular/modular) - Modular Platform with the MAX inference engine and the Mojo language.
 
 ### Desktop Apps and Chat UIs
 
@@ -286,15 +317,17 @@ This list is intentionally selective. It favors resources that help developers u
 - [Cohere](https://cohere.com/) - Enterprise NLP and LLM platform with retrieval-oriented APIs.
 - [MiniMax](https://www.minimax.io/) - Multimodal foundation models spanning text, speech, video, and music.
 - [Hugging Face](https://huggingface.co/) - Hub for open models, datasets, and machine learning tooling.
+- [Needle](https://github.com/cactus-compute/needle) - 14 MB foundation model for tiny devices such as phones, wearables, smart home hardware, and robots.
 
 ## Fine-Tuning and Training
 
-- [Unsloth](https://unsloth.ai) - Library for faster and more memory-efficient LLM fine-tuning.
+- [Unsloth](https://unsloth.ai) - Fast, memory-efficient fine-tuning library with a local UI for running and training LLMs and diffusion models.
 - [Axolotl](https://github.com/axolotl-ai-cloud/axolotl) - Streamlined fine-tuning tool covering many model architectures via YAML configs.
 - [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) - Unified fine-tuning framework for 100+ models with a web UI.
 - [TRL](https://github.com/huggingface/trl) - Hugging Face library for post-training models with SFT, DPO, and RLHF.
 - [Kiln](https://getkiln.ai) - App for synthetic data, fine-tuning, and model-building workflows.
 - [Ludwig](https://github.com/ludwig-ai/ludwig) - Low-code system for training and deploying ML and deep learning models.
+- [Soup](https://github.com/MakazhanAlpamys/Soup) - YAML-driven LLM fine-tuning with layer streaming that trains an 8B model on a 4 GB laptop GPU.
 
 ## Evals, Observability, and Security
 
@@ -327,6 +360,7 @@ This list is intentionally selective. It favors resources that help developers u
 - [Prediction Guard](https://www.predictionguard.com/) - Controlled LLM access with privacy, safety, and compliance features.
 - [rehydra](https://github.com/rehydra-ai/rehydra-sdk) - Local PII anonymization and rehydration SDK for LLM prompts.
 - [Agentic Radar](https://github.com/splx-ai/agentic-radar) - Security scanner for agentic workflows.
+- [AI-Infra-Guard](https://github.com/Tencent/AI-Infra-Guard) - Tencent's AI red teaming platform that scans agents, skills, MCP servers, and AI infrastructure.
 
 ## Benchmarks and Leaderboards
 
@@ -374,6 +408,8 @@ This list is intentionally selective. It favors resources that help developers u
 - [cuDNN](https://developer.nvidia.com/cuDNN) - NVIDIA GPU-accelerated primitives for deep neural networks.
 - [Gymnasium](https://github.com/Farama-Foundation/Gymnasium) - Toolkit for reinforcement learning environments and algorithm comparison.
 - [Albumentations](https://github.com/albumentations-team/albumentations) - Fast image augmentation library for computer vision pipelines.
+- [Transformers](https://github.com/huggingface/transformers) - Hugging Face's model-definition framework for state-of-the-art models across text, vision, audio, and multimodal tasks.
+- [ONNX Runtime](https://github.com/microsoft/onnxruntime) - Cross-platform, high-performance accelerator for ML inference and training.
 
 ### Tooling
 
@@ -405,12 +441,13 @@ This list is intentionally selective. It favors resources that help developers u
 - [Midjourney](https://www.midjourney.com/) - Widely used image generation service for stylized and photorealistic outputs.
 - [Ideogram](https://ideogram.ai/) - Image generation platform with strong text rendering.
 - [Adobe Firefly](https://firefly.adobe.com/) - Creative Cloud integrated image generation and editing tools.
-- [ComfyUI](https://github.com/comfyanonymous/ComfyUI) - Node-based interface for Stable Diffusion and image-generation workflows.
+- [ComfyUI](https://github.com/Comfy-Org/ComfyUI) - Node-based interface for Stable Diffusion and image-generation workflows.
 - [Civitai](https://civitai.com/) - Community hub for sharing diffusion models, LoRAs, and workflows.
 - [Lexica](https://lexica.art/) - Search engine for Stable Diffusion images and prompts.
 - [PromptHero](https://prompthero.com/) - Prompt search and inspiration across major image models.
 - [DiffusionDB](https://poloclub.github.io/diffusiondb/) - Large-scale dataset of Stable Diffusion prompts and generated images.
 - [TRELLIS.2](https://github.com/microsoft/TRELLIS.2) - Microsoft's native and compact structured latents for 3D generation.
+- [Modly](https://github.com/lightningpixel/modly) - Desktop app that generates 3D models from images or prompts with local AI on your own GPU.
 
 ### Video
 
@@ -421,6 +458,7 @@ This list is intentionally selective. It favors resources that help developers u
 - [Google Flow](https://labs.google/fx/tools/flow) - Google AI filmmaking workspace powered by Veo.
 - [HyperFrames](https://hyperframes.heygen.com/) - Framework for programmatically rendering video with HTML, CSS, JavaScript, and agents.
 - [video-use](https://github.com/browser-use/video-use) - Library for editing videos with coding agents.
+- [LTX-2](https://github.com/Lightricks/LTX-2) - Official inference and LoRA training package for the LTX-2 open audio-video generative model.
 
 ### Audio
 
