@@ -165,6 +165,7 @@ This list is intentionally selective. It favors resources that help developers u
 - [Model Context Protocol](https://modelcontextprotocol.io/) - Open protocol for connecting AI systems to tools, data, and external capabilities.
 - [ToolHive](https://github.com/stacklok/toolhive) - Tool for finding and deploying MCP servers.
 - [Browser Use](https://github.com/browser-use/browser-use) - Library that lets AI agents control a real browser to complete web tasks.
+- [Agent QA](https://github.com/vostride/agent-qa) - Source-available FSL-1.1-ALv2 agent for authoring and running natural-language regression tests across web, Android, and iOS; each release converts to Apache-2.0 after two years.
 - [Steel Browser](https://github.com/steel-dev/steel-browser) - Browser automation infrastructure for AI agents, including sessions, screenshots, and proxies.
 - [Notte](https://github.com/nottelabs/notte) - Framework for browser-using AI agents.
 - [E2B](https://e2b.dev/) - Sandboxed cloud environments for safely running AI-generated code.
