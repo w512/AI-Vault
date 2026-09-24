@@ -353,6 +353,7 @@ This list is intentionally selective. It favors resources that help developers u
 - [Agenta](https://agenta.ai/) - Open-source platform for prompt management, evaluation, and production monitoring.
 - [Maxim AI](https://www.getmaxim.ai/) - Evaluation and observability platform for shipping AI products with quality checks.
 - [OpenAI Downtime Monitor](https://status.portkey.ai/) - Public status and latency tracker for major LLM APIs.
+- [NextReset](https://nextreset.ai/) - Independent Codex reset-history and official AI incident resource with source links and a browser-local personal timer.
 
 ### Security, Privacy, and Guardrails
 
