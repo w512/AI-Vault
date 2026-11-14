@@ -371,6 +371,7 @@ This list is intentionally selective. It favors resources that help developers u
 - [OpenRouter Rankings](https://openrouter.ai/rankings) - Usage-based model rankings from OpenRouter traffic.
 - [SEAL LLM Leaderboard](https://labs.scale.com/leaderboard) - Expert-driven model benchmark leaderboard.
 - [LLM Stats](https://llm-stats.com/) - Model comparison site covering context windows, price, speed, and benchmarks.
+- [AIHOT Model Leaderboard](https://aihot.news/leaderboard) - Chinese-language model rankings that aggregate published third-party evaluations and link to the underlying benchmarks.
 
 ### Benchmarks
 
