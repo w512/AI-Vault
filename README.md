@@ -61,6 +61,7 @@ This list is intentionally selective. It favors resources that help developers u
 - [Plandex](https://github.com/plandex-ai/plandex) - Terminal-based AI coding workflow for larger implementation plans.
 - [DeepSeek-Reasonix](https://github.com/esengine/DeepSeek-Reasonix) - DeepSeek-native terminal coding agent engineered around prefix-cache stability.
 - [Open Interpreter](https://github.com/openinterpreter/open-interpreter) - Local terminal interface for executing code and automating computer tasks with LLMs.
+- [Mel](https://www.openmel.dev) - Multi-agent, multi-model terminal for coding teams on macOS, Windows and Linux, with a VS Code extension and configurable approvals.
 
 ### IDE Extensions and Assistants
 
